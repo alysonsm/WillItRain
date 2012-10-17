@@ -42,7 +42,7 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
     
-    NSLog(@"OldLocation %@", newLocation.);
+    NSLog(@"OldLocation %@", newLocation);
 }
 
 
