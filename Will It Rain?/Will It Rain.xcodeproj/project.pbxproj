@@ -18,17 +18,18 @@
 		1B628994162E259F00ABC7ED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B628993162E259F00ABC7ED /* Default-568h@2x.png */; };
 		1B628997162E259F00ABC7ED /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B628995162E259F00ABC7ED /* MainStoryboard.storyboard */; };
 		1B62899A162E259F00ABC7ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B628999162E259F00ABC7ED /* ViewController.m */; };
+		1BD6926B162E4F82007B663C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD6926A162E4F82007B663C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B628979162E259F00ABC7ED /* Will It Rain?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Will It Rain?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B628979162E259F00ABC7ED /* Will It Rain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Will It Rain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B62897D162E259F00ABC7ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1B62897F162E259F00ABC7ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1B628981162E259F00ABC7ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1B628985162E259F00ABC7ED /* Will It Rain?-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Will It Rain?-Info.plist"; sourceTree = "<group>"; };
+		1B628985162E259F00ABC7ED /* Will It Rain-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Will It Rain-Info.plist"; sourceTree = "<group>"; };
 		1B628987162E259F00ABC7ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B628989162E259F00ABC7ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1B62898B162E259F00ABC7ED /* Will It Rain?-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Will It Rain?-Prefix.pch"; sourceTree = "<group>"; };
+		1B62898B162E259F00ABC7ED /* Will It Rain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Will It Rain-Prefix.pch"; sourceTree = "<group>"; };
 		1B62898C162E259F00ABC7ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1B62898D162E259F00ABC7ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1B62898F162E259F00ABC7ED /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 		1B628996162E259F00ABC7ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1B628998162E259F00ABC7ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1B628999162E259F00ABC7ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1BD6926A162E4F82007B663C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD6926B162E4F82007B663C /* CoreLocation.framework in Frameworks */,
 				1B62897E162E259F00ABC7ED /* UIKit.framework in Frameworks */,
 				1B628980162E259F00ABC7ED /* Foundation.framework in Frameworks */,
 				1B628982162E259F00ABC7ED /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +59,7 @@
 		1B62896E162E259F00ABC7ED = {
 			isa = PBXGroup;
 			children = (
+				1BD6926A162E4F82007B663C /* CoreLocation.framework */,
 				1B628983162E259F00ABC7ED /* Will It Rain? */,
 				1B62897C162E259F00ABC7ED /* Frameworks */,
 				1B62897A162E259F00ABC7ED /* Products */,
@@ -65,7 +69,7 @@
 		1B62897A162E259F00ABC7ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B628979162E259F00ABC7ED /* Will It Rain?.app */,
+				1B628979162E259F00ABC7ED /* Will It Rain.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,10 +100,10 @@
 		1B628984162E259F00ABC7ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1B628985162E259F00ABC7ED /* Will It Rain?-Info.plist */,
+				1B628985162E259F00ABC7ED /* Will It Rain-Info.plist */,
 				1B628986162E259F00ABC7ED /* InfoPlist.strings */,
 				1B628989162E259F00ABC7ED /* main.m */,
-				1B62898B162E259F00ABC7ED /* Will It Rain?-Prefix.pch */,
+				1B62898B162E259F00ABC7ED /* Will It Rain-Prefix.pch */,
 				1B62898F162E259F00ABC7ED /* Default.png */,
 				1B628991162E259F00ABC7ED /* Default@2x.png */,
 				1B628993162E259F00ABC7ED /* Default-568h@2x.png */,
@@ -110,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B628978162E259F00ABC7ED /* Will It Rain? */ = {
+		1B628978162E259F00ABC7ED /* Will It Rain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B62899D162E259F00ABC7ED /* Build configuration list for PBXNativeTarget "Will It Rain?" */;
+			buildConfigurationList = 1B62899D162E259F00ABC7ED /* Build configuration list for PBXNativeTarget "Will It Rain" */;
 			buildPhases = (
 				1B628975162E259F00ABC7ED /* Sources */,
 				1B628976162E259F00ABC7ED /* Frameworks */,
@@ -122,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = "Will It Rain?";
+			name = "Will It Rain";
 			productName = "Will It Rain?";
-			productReference = 1B628979162E259F00ABC7ED /* Will It Rain?.app */;
+			productReference = 1B628979162E259F00ABC7ED /* Will It Rain.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +140,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Ikolu;
 			};
-			buildConfigurationList = 1B628973162E259F00ABC7ED /* Build configuration list for PBXProject "Will It Rain?" */;
+			buildConfigurationList = 1B628973162E259F00ABC7ED /* Build configuration list for PBXProject "Will It Rain" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -148,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B628978162E259F00ABC7ED /* Will It Rain? */,
+				1B628978162E259F00ABC7ED /* Will It Rain */,
 			);
 		};
 /* End PBXProject section */
@@ -255,9 +259,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Will It Rain?/Will It Rain?-Prefix.pch";
-				INFOPLIST_FILE = "Will It Rain?/Will It Rain?-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Will It Rain?/Will It Rain-Prefix.pch";
+				INFOPLIST_FILE = "Will It Rain?/Will It Rain-Info.plist";
+				PRODUCT_NAME = "Will It Rain";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -266,9 +270,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Will It Rain?/Will It Rain?-Prefix.pch";
-				INFOPLIST_FILE = "Will It Rain?/Will It Rain?-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Will It Rain?/Will It Rain-Prefix.pch";
+				INFOPLIST_FILE = "Will It Rain?/Will It Rain-Info.plist";
+				PRODUCT_NAME = "Will It Rain";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -276,7 +280,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B628973162E259F00ABC7ED /* Build configuration list for PBXProject "Will It Rain?" */ = {
+		1B628973162E259F00ABC7ED /* Build configuration list for PBXProject "Will It Rain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B62899B162E259F00ABC7ED /* Debug */,
@@ -285,13 +289,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B62899D162E259F00ABC7ED /* Build configuration list for PBXNativeTarget "Will It Rain?" */ = {
+		1B62899D162E259F00ABC7ED /* Build configuration list for PBXNativeTarget "Will It Rain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B62899E162E259F00ABC7ED /* Debug */,
 				1B62899F162E259F00ABC7ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
