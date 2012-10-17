@@ -19,6 +19,7 @@
 		1B628997162E259F00ABC7ED /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B628995162E259F00ABC7ED /* MainStoryboard.storyboard */; };
 		1B62899A162E259F00ABC7ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B628999162E259F00ABC7ED /* ViewController.m */; };
 		1BD6926B162E4F82007B663C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD6926A162E4F82007B663C /* CoreLocation.framework */; };
+		25A1AC33162EFB9700223F91 /* UserWeatherLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1AC32162EFB9600223F91 /* UserWeatherLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		1B628998162E259F00ABC7ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1B628999162E259F00ABC7ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1BD6926A162E4F82007B663C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		25A1AC31162EFB9600223F91 /* UserWeatherLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWeatherLocation.h; sourceTree = "<group>"; };
+		25A1AC32162EFB9600223F91 /* UserWeatherLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWeatherLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				1B628995162E259F00ABC7ED /* MainStoryboard.storyboard */,
 				1B628998162E259F00ABC7ED /* ViewController.h */,
 				1B628999162E259F00ABC7ED /* ViewController.m */,
+				25A1AC31162EFB9600223F91 /* UserWeatherLocation.h */,
+				25A1AC32162EFB9600223F91 /* UserWeatherLocation.m */,
 				1B628984162E259F00ABC7ED /* Supporting Files */,
 			);
 			path = "Will It Rain?";
@@ -180,6 +185,7 @@
 				1B62898A162E259F00ABC7ED /* main.m in Sources */,
 				1B62898E162E259F00ABC7ED /* AppDelegate.m in Sources */,
 				1B62899A162E259F00ABC7ED /* ViewController.m in Sources */,
+				25A1AC33162EFB9700223F91 /* UserWeatherLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

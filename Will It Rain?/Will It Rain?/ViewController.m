@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UserWeatherLocation.h"
 
 @interface ViewController ()
 
@@ -42,7 +43,10 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
     
-    NSLog(@"OldLocation %@", newLocation);
+    //Instanciando o novo objeto ja passando as coordenadas de newLocation.
+    //O objeto tem um metodo pra pegas as cordenadas ja em string separada por virgula 
+    UserWeatherLocation *user = [[UserWeatherLocation alloc] initWithCoordinate:newLocation];
+    NSLog(@"Esse eh o teste do metodo de pegar as cordenadas: %@",[user coordinates]);
 }
 
 
