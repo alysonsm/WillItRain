@@ -24,10 +24,10 @@
     // Make this instance of WhereamiAppDelegate the delegate // it will send its messages to our WhereamiAppDelegate
     [locationManager setDelegate:self];
     // We want all results from the location manager
-    [locationManager setDistanceFilter:kCLDistanceFilterNone];
+    [locationManager setDistanceFilter:200];
     // And we want it to be as accurate as possible
     // regardless of how much time/power it takes
-    [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    [locationManager setDesiredAccuracy:kCLLocationAccuracyThreeKilometers];
     // Tell our manager to start looking for its location immediately
     [locationManager startUpdatingLocation];
     
