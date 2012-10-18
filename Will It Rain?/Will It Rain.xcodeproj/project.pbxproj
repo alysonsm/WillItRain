@@ -18,6 +18,9 @@
 		1B628994162E259F00ABC7ED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B628993162E259F00ABC7ED /* Default-568h@2x.png */; };
 		1B628997162E259F00ABC7ED /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B628995162E259F00ABC7ED /* MainStoryboard.storyboard */; };
 		1B62899A162E259F00ABC7ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B628999162E259F00ABC7ED /* ViewController.m */; };
+		1BAAD173162F8B74006CE677 /* willitrain.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BAAD172162F8B74006CE677 /* willitrain.png */; };
+		1BAAD175162F8BB9006CE677 /* willitrain.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BAAD174162F8BB9006CE677 /* willitrain.png */; };
+		1BAAD177162F8C04006CE677 /* willitrain57.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BAAD176162F8C04006CE677 /* willitrain57.png */; };
 		1BD6926B162E4F82007B663C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD6926A162E4F82007B663C /* CoreLocation.framework */; };
 		25A1AC33162EFB9700223F91 /* UserWeatherLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A1AC32162EFB9600223F91 /* UserWeatherLocation.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +42,9 @@
 		1B628996162E259F00ABC7ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1B628998162E259F00ABC7ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1B628999162E259F00ABC7ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1BAAD172162F8B74006CE677 /* willitrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = willitrain.png; path = ../../../../Desktop/willitrain.png; sourceTree = "<group>"; };
+		1BAAD174162F8BB9006CE677 /* willitrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = willitrain.png; path = ../willitrain.png; sourceTree = "<group>"; };
+		1BAAD176162F8C04006CE677 /* willitrain57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = willitrain57.png; path = ../willitrain57.png; sourceTree = "<group>"; };
 		1BD6926A162E4F82007B663C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		25A1AC31162EFB9600223F91 /* UserWeatherLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserWeatherLocation.h; sourceTree = "<group>"; };
 		25A1AC32162EFB9600223F91 /* UserWeatherLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWeatherLocation.m; sourceTree = "<group>"; };
@@ -105,6 +111,9 @@
 		1B628984162E259F00ABC7ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1BAAD176162F8C04006CE677 /* willitrain57.png */,
+				1BAAD174162F8BB9006CE677 /* willitrain.png */,
+				1BAAD172162F8B74006CE677 /* willitrain.png */,
 				1B628985162E259F00ABC7ED /* Will It Rain-Info.plist */,
 				1B628986162E259F00ABC7ED /* InfoPlist.strings */,
 				1B628989162E259F00ABC7ED /* main.m */,
@@ -172,6 +181,9 @@
 				1B628992162E259F00ABC7ED /* Default@2x.png in Resources */,
 				1B628994162E259F00ABC7ED /* Default-568h@2x.png in Resources */,
 				1B628997162E259F00ABC7ED /* MainStoryboard.storyboard in Resources */,
+				1BAAD173162F8B74006CE677 /* willitrain.png in Resources */,
+				1BAAD175162F8BB9006CE677 /* willitrain.png in Resources */,
+				1BAAD177162F8C04006CE677 /* willitrain57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

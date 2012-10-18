@@ -7,14 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "UserWeatherLocation.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
+@synthesize answer;
 
 - (void)viewDidLoad
 {
@@ -41,13 +40,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
     
     //Instanciando o novo objeto ja passando as coordenadas de newLocation.
     //O objeto tem um metodo pra pegas as cordenadas ja em string separada por virgula 
-    UserWeatherLocation *user = [[UserWeatherLocation alloc] initWithCoordinate:newLocation];
+    user = [[UserWeatherLocation alloc] initWithCoordinate:newLocation];
     NSLog(@"Esse eh o teste do metodo de pegar as cordenadas: %@",[user coordinates]);
+    
+    //Calling web service method
+    [user runWebServicesCall];
+    
+    if([user willItRain]){
+        
+        [answer setText:@"YES!"];
+    }
+    else{
+        
+        [answer setText:@"NO!"];
+    }
+    
+    NSLog(@"Answering question! Sunny day: %d and Weather Code %i.", SUNNY_DAY, user.weatherCode);
 }
-
 
 @end

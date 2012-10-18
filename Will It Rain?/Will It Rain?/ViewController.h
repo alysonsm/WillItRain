@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "UserWeatherLocation.h"
+
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate>
 {
     CLLocationManager * locationManager;
+    UserWeatherLocation *user;
+    
 }
+@property (weak, nonatomic) IBOutlet UILabel *answer;
 
 @end
