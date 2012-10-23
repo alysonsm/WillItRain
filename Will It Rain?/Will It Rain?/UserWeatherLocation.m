@@ -46,7 +46,6 @@
     NSData *data = [NSURLConnection sendSynchronousRequest:request
                                          returningResponse:&response
                                                      error:&error];
-    
     [xmlData appendData:data];
     
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData: xmlData];
@@ -65,7 +64,6 @@
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
 {
     if([weatherElement isEqual:@"weatherCode"]){
-        NSLog(@"Getting element weather code: %@.", string);
         weatherCode = [string intValue];
     }
 }

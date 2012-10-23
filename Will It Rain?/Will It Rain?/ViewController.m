@@ -47,8 +47,6 @@
     //O objeto tem um metodo pra pegas as cordenadas ja em string separada por virgula 
     user = [[UserWeatherLocation alloc] initWithCoordinate:newLocation];
     
-    NSLog(@"Esse eh o teste do metodo de pegar as cordenadas: %@",[user coordinates]);
-    
     //Calling web service method
     [user runWebServicesCall];
     [self willItRain];
@@ -66,7 +64,6 @@
         
         [answer setText:@"NO!"];
     }
-    NSLog(@"Answering question! Sunny day: %d and Weather Code %i.", SUNNY_DAY, user.weatherCode);
 }
 
 @end
