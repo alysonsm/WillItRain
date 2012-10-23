@@ -9,23 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "UserWeatherLocation.h"
-#define SUNNY_DAY 113
+
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate>
 {
-    NSURLConnection *connection;
-    NSMutableData *xmlData;
-    int weatherCode;
-    NSString *weatherElement;
-    
     CLLocationManager * locationManager;
     UserWeatherLocation *user;
     
 }
-
 @property (weak, nonatomic) IBOutlet UILabel *answer;
-
-- (void)runWebServicesCall;
-- (void)willItRain;
 
 @end
