@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "UserWeatherLocation.h"
-#define SUNNY_DAY 113
+
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate>
 {
@@ -17,7 +17,6 @@
     UserWeatherLocation *user;
     
 }
-
 @property (weak, nonatomic) IBOutlet UILabel *answer;
 
 - (void)willItRain;

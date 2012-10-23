@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#define SUNNY_DAY 113
 
 @interface UserWeatherLocation : NSObject{
     
