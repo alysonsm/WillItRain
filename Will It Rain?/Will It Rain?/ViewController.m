@@ -46,75 +46,14 @@
     //Instanciando o novo objeto ja passando as coordenadas de newLocation.
     //O objeto tem um metodo pra pegas as cordenadas ja em string separada por virgula 
     user = [[UserWeatherLocation alloc] initWithCoordinate:newLocation];
+    
     NSLog(@"Esse eh o teste do metodo de pegar as cordenadas: %@",[user coordinates]);
     
     //Calling web service method
-    self.runWebServicesCall;
+    [user runWebServicesCall];
+    [self willItRain];
 }
 
-//WS
-
-- (void)runWebServicesCall
-{
-    weatherCode = 0;
-    xmlData = [[NSMutableData alloc] init];
-    NSString *queryURLUnsafe = [NSString stringWithFormat:@"http://free.worldweatheronline.com/feed/weather.ashx?key=9e010a3ffd152736121710&q=%@", user.coordinates];
-    NSString *queryURLsafe = [queryURLUnsafe stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    
-    NSURL *url = [NSURL URLWithString: queryURLsafe];
-    
-    NSURLRequest *req = [NSURLRequest requestWithURL:url];
-    
-    connection = [[NSURLConnection alloc] initWithRequest:req delegate: self startImmediately: YES];
-}
-
-//Method Callback to append data into xmlData
-- (void)connection: (NSURLConnection *)conn didReceiveData:(NSData *) data
-{
-    
-    [xmlData appendData:data];
-}
-
-- (void)connectionDidFinishLoading: (NSURLConnection *)conn
-{
-    
-    NSXMLParser *parser = [[NSXMLParser alloc] initWithData: xmlData];
-    [parser setDelegate: self];
-    [parser parse];
-    xmlData = nil;
-    connection = nil;
-}
-
-//Reading XML File
-- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
-{
-    weatherElement = elementName;
-}
-
-//Saving Element
-- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
-{
-    if([weatherElement isEqual:@"weatherCode"]){
-        
-        NSLog(@"Getting element weather code: %@.", string);
-        user.weatherCode = [string intValue];
-        self.willItRain;
-    }
-}
-
-
-- (void)connection: (NSURLConnection *)conn didFailWithError:(NSError *)error
-{
-    connection = nil;
-    xmlData = nil;
-    
-    NSString *errorString = [NSString stringWithFormat:@"Fetch failed: %@", [error localizedDescription]];
-    
-    //Creating an alert
-    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error" message: errorString delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
-    
-    [av show];
-}
 
 - (void)willItRain
 {

@@ -10,12 +10,16 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface UserWeatherLocation : NSObject{
-  
+    
+    NSURLConnection *connection;
+    NSMutableData *xmlData;
+    int weatherCode;
+    NSString *weatherElement;
 }
 @property (nonatomic, readonly) NSString *coordinates;
 @property int weatherCode;
 
 - (id) initWithCoordinate:(CLLocation *)c;
-
+- (void)runWebServicesCall;
 
 @end

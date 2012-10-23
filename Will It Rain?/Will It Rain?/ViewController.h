@@ -13,11 +13,6 @@
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate>
 {
-    NSURLConnection *connection;
-    NSMutableData *xmlData;
-    int weatherCode;
-    NSString *weatherElement;
-    
     CLLocationManager * locationManager;
     UserWeatherLocation *user;
     
@@ -25,7 +20,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *answer;
 
-- (void)runWebServicesCall;
 - (void)willItRain;
 
 @end
