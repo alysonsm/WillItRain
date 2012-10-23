@@ -66,7 +66,6 @@
         
         [answer setText:@"NO!"];
     }
-    
     NSLog(@"Answering question! Sunny day: %d and Weather Code %i.", SUNNY_DAY, user.weatherCode);
 }
 
